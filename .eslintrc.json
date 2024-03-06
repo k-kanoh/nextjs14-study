@@ -1,0 +1,32 @@
+{
+  "ignorePatterns": ["/*.*", "components/ui"],
+  "plugins": ["import", "sort-keys-fix", "typescript-sort-keys", "tailwindcss"],
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:tailwindcss/recommended",
+    "prettier"
+  ],
+  "rules": {
+    "@next/next/no-img-element": "warn",
+    "import/no-duplicates": "warn",
+    "import/order": [
+      "warn",
+      {
+        "groups": [
+          "builtin",
+          "external",
+          "internal",
+          "parent",
+          "sibling",
+          "index",
+          "object",
+          "type"
+        ]
+      }
+    ],
+    "react/jsx-sort-props": "warn",
+    "sort-keys-fix/sort-keys-fix": "warn",
+    "typescript-sort-keys/interface": "warn",
+    "typescript-sort-keys/string-enum": "warn"
+  }
+}
